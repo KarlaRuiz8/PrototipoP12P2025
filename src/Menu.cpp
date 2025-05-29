@@ -1,3 +1,4 @@
+//Modificaciones del menu
 #include "Menu.h"
 #include "CatalogoX.h"
 #include <iostream>
@@ -42,7 +43,7 @@ void Menu::mostrarMenuGeneral() {
                 catalogo.menuCRUD(); // Muestra el menú de CRUD
                 break;
             }
-            case 2: cout << "Saliendo del sistema...\n"; break; // Mensaje de despedida
+            case 2:  cout << "Saliendo del sistema...\n"; break; // Mensaje de despedida
             default: cout << "Opción inválida. Intente de nuevo.\n"; // Mensaje de opción no válida
         }
         system("pause"); // Pausa antes de volver a mostrar el menú
