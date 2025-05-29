@@ -13,10 +13,9 @@ public:
     // Constructor que acepta nombre de usuario y carnet
     Menu(const string& _nombreUsuario, const string& _carnet);
 
-    void mostrarMenuGeneral(); // Método para mostrar el menú general
-    void mostrarMenuCRUD();    // Método para mostrar el menú de Catálogos
-    void mostrarMenuReportes(); // Método para mostrar el menú de informes
-    void mostrarMenuSeguridad(); // Método para mostrar el menú de seguridad
+    void mostrarMenuGeneral();    // Método para mostrar el menú general
+    void mostrarMenuReportes();   // Método para mostrar el menú de reportes
+    void mostrarMenuSeguridad();   // Método para mostrar el menú de seguridad
 };
 
-#endif
+#endif // MENU_H

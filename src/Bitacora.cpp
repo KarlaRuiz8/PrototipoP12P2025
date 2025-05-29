@@ -1,11 +1,13 @@
 #include "Bitacora.h"
+#include <iostream>
 #include <fstream>
-#include <ctime>
-using namespace std;
 
-void Bitacora::registrar(const string& usuario, const string& accion, int codigo) {
-    ofstream file("bitacora.txt", ios::app); // Abre el archivo en modo append
-    time_t now = time(0);
-    file << usuario << " | " << accion << " | Código: " << codigo << " | Fecha: " << ctime(&now);
-    file.close();
+void Bitacora::registrarAcceso(const string& usuario) {
+    ofstream archivo("bitacora.txt", ios::app);
+    if (archivo.is_open()) {
+        archivo << "Acceso de usuario: " << usuario << endl;
+        archivo.close();
+    } else {
+        cout << "Error al abrir el archivo de bitácora.\n";
+    }
 }

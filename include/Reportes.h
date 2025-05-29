@@ -1,9 +1,9 @@
 #ifndef REPORTES_H
 #define REPORTES_H
 
-clase Reportes {
+class Reportes {
 public:
-void mostrarrReportes();
+    void mostrarReportes(); // Corrige el nombre del método
 };
 
-#endif
+#endif // REPORTES_H
