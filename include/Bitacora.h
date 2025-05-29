@@ -1,3 +1,4 @@
+//Correciones de Bitacora
 #ifndef BITACORA_H
 #define BITACORA_H
 
@@ -9,4 +10,4 @@ public:
     static void registrarAcceso(const string& usuario);
 };
 
-#endif
+#endif // BITACORA_H

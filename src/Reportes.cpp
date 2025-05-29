@@ -1,8 +1,10 @@
 #include "Reportes.h"
 #include <iostream>
+#include <fstream> // Asegúrate de incluir esta biblioteca
 using namespace std;
 
-void Reportes::menuReportes() {
+void Reportes::mostrarReportes() {
+    cout << "Mostrando reportes...\n";
     int opcion;
     do {
         cout << "\n-- Reportes --" << endl;
@@ -30,7 +32,7 @@ void Reportes::menuReportes() {
                 cout << "Saliendo del submenú Reportes..." << endl;
                 break;
             default:
-                cout << "Opcion invalida." << endl;
+                cout << "Opción inválida." << endl;
         }
     } while (opcion != 2);
 }
